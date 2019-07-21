@@ -1,0 +1,11 @@
+
+# Default ignored files
+/workspace.xml
+/.idea/
+/blood-donations.iml
+/misc.xml
+/modules.xml
+/inspectionProfiles/profiles_settings.xml
+/libraries/
+/vcs.xml
+/other.xml
