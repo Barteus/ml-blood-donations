@@ -8,8 +8,13 @@ import commons
 data = commons.get_data()
 
 # %%
+data = commons.preprocessing(data)
+data = commons.feature_engineering(data)
+# %%
 X_train, X_test, y_train, y_test = commons.prepare_ds(data)
+print(X_train.shape, y_train.shape)
 X_train, y_train = commons.oversampling(X_train, y_train)
+print(X_train.shape, y_train.shape)
 
 # %%
 classifier = RandomForestClassifier(random_state=0)
