@@ -6,7 +6,8 @@ import commons
 data = commons.get_data()
 
 # %%
-commons.feature_engineering(data)
+data = commons.preprocessing(data)
+data = commons.feature_engineering(data)
 # %%
 X_train, X_test, y_train, y_test = commons.prepare_ds(data)
 X_train, y_train = commons.oversampling(X_train, y_train)
