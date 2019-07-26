@@ -1,4 +1,4 @@
-# TODO improve by using xgboost
+# TODO improve by using xgboost ?
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 
