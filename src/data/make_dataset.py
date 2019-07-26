@@ -11,8 +11,8 @@ def get_raw_data():
     return pd.read_csv(path, names=column_names, header=0)
 
 
-def save_processed_data(data):
-    path = os.path.join(PROJECT_DIR, "data", "processed", "transfusion_1.csv")
+def save_processed_data(data, filename):
+    path = os.path.join(PROJECT_DIR, "data", "processed", filename)
     data.to_csv(path, index=False)
 
 
