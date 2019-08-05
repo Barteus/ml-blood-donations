@@ -5,14 +5,15 @@ from src.data import make_dataset
 from src.models import eval
 
 # %%
-data = make_dataset.get_processed_data("transfusion_2_oversampled.csv")
+data = make_dataset.get_processed_data("transfusion_3_binning.csv")
+# data = make_dataset.get_processed_data("transfusion_2_oversampled.csv")
 # data = make_dataset.get_processed_data("transfusion_1.csv")
 
 # %%
 
 x = data.drop('Donation', axis=1)
 y = data.Donation
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.25, random_state=42)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=42)
 
 
 # %%
@@ -25,3 +26,5 @@ def lr(x_train, x_test, y_train, y_test):
 
 
 lr(x_train, x_test, y_train, y_test)
+
+# TODO Binnig/Bracketing + XGBoost
