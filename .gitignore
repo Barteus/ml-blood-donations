@@ -1,8 +1,4 @@
 
 /.idea/*
-src/models/__pycache__/*
-notebook/.ipynb_checkpoints/*
 __pycache__/*
-src/data/__pycache__/*
-src/features/.ipynb_checkpoints/*
-src/features/__pycache__/*
+/.ipynb_checkpoints/*
